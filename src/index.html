@@ -8,6 +8,7 @@
     <title>to do list</title>
 </head>
 <body>
+    <div class="body">
     <h1>Todo List</h1>
     <div class="main">
         <form action="search">
@@ -16,7 +17,27 @@
                 <span  class="search-logo material-symbols-outlined">search</span>
             </div>
         </form>
-          
+
+          <select id="tasks">
+            <option value="">All</option>
+            <option value="">Complete</option>
+            <option value="">Incomplete</option>
+          </select>
     </div>
+    <div class="add-popup"> 
+        <div class="content-wrapper">
+        <h2 class="popup-title">New Note</h2>
+        <input class="popup-input" type="text" placeholder="Input your note">
+ </div>
+        <div class="button-wrapper">
+        <button class="cancel-btn popup-btn">Cancel</button>
+        <button class=" popup-btn">Apply</button>
+         </div>
+        
+    </div>
+    </div>
+    <button class=" add-note">+</button>
+   
+    <script src="script.js"></script>
 </body>
 </html>
